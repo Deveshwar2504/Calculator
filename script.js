@@ -1,4 +1,4 @@
-alert("JavaScript Loaded!");
+
 
 let display = document.getElementById("display");
 
