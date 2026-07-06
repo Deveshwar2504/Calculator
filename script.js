@@ -1,3 +1,5 @@
+alert("JavaScript Loaded!");
+
 let display = document.getElementById("display");
 
 function append(value) {
