@@ -16,7 +16,12 @@ function deleteLast() {
 
 function calculate() {
     try {
-        display.value = eval(display.value);
+        let expression = display.value;
+
+       
+        expression = expression.replace(/(\d+(\.\d+)?)%/g, "($1/100)");
+
+        display.value = eval(expression);
     } catch (error) {
         display.value = "Error";
     }
